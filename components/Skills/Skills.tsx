@@ -19,16 +19,16 @@ export const Skills = (props: SkillsProps) => {
             <div className="flex grid-cols-2">
                 <div className={"w-full min-h-fit p-10 bg-[#2c2c2c] border-y-2 border-pink-600 "}>
                     <h2>Back End</h2>
-                    {
+                    {/* {
                         props.ability.slice(0,8).map((categorie, skill) => {
                             skill
                         }
                         )
 
-                    }
+                    } */}
 
 
-                    }
+                    {/* } */}
 
                 </div>
                 <div className={"w-full min-h-fit p-10 bg-[#2c2c2c] border-y-2 border-pink-600 "}>
