@@ -19,6 +19,7 @@ export const Footer = (props: FooterProps) => {
                     <h1 className={"text-center pb-2 "}>REDES SOCIAIS</h1>
                     <SocialCard />
                 </div>
+                
 
 
                 <div id={"Créditos"} className={"text-white w-auto pt-4 px-7"}>
