@@ -1,4 +1,4 @@
-import { CardSociais } from "../Cards/CardSociais"
+import { SocialCard } from "../Cards/SocialCard"
 import { Logo } from "../Logo/Logo"
 
 
@@ -17,7 +17,7 @@ export const Footer = (props: FooterProps) => {
 
                 <div className={"w-auto text-white"}>
                     <h1 className={"text-center pb-2 "}>REDES SOCIAIS</h1>
-                    <CardSociais />
+                    <SocialCard />
                 </div>
 
 

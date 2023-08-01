@@ -1,10 +1,10 @@
 import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 
-interface CardSociaisProps {
+interface SocialCardProps {
 
 }
 
-export const CardSociais = (props: CardSociaisProps) => {
+export const SocialCard = (props: SocialCardProps) => {
 
     return (
         <>
