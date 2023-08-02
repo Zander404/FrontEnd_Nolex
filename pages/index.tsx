@@ -6,10 +6,12 @@ import { Skills } from "../components/Skills/Skills";
 import { SobreMim } from "../components/SobreMim/SobreMim";
 
 export default function Home() {
-  const linguagens = [ 
-                      {categorie:'back', skill:'git'}, {categorie:"back", skill:'python'},{categorie:'back', skill:'django'},{categorie:'back', skill:'docker'}, 
-                      {categorie:'front', skill:'html'},{categorie:'front', skill:'js'},{categorie:'front', skill:'tailwind'},{categorie:'front', skill:'react'}
-                    ]
+  const skill = [ 
+                      {categorie:'back', name:'git'}, {categorie:"back", name:'python'},{categorie:'back', name:'django'},{categorie:'back', name:'docker'}, 
+                      {categorie:'front', name:'html'},{categorie:'front', name:'js'},{categorie:'front', name:'tailwind'},{categorie:'front', name:'react'}
+                ]
+                
+             
   return (
     <>
       <section className={"h-screen w-screen bg-purple-700"}>
@@ -22,7 +24,7 @@ export default function Home() {
         </section>
         
         <section id="skill">
-          <Skills ability={linguagens} />
+          <Skills key={1} skill={skill} />
 
         </section>
 
