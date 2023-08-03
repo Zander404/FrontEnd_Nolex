@@ -1,5 +1,15 @@
 import Image from "next/image"
+import router from "next/router"
 
+    // Handles
+    const handleScroll = (element: string) => {
+        const section = document.getElementById(element)
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        } else if (section == null) {
+            router.push(`/#${element}`)
+        }
+    }
 
 
 export const Logo = () => {
