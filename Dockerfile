@@ -1,4 +1,6 @@
-FROM --platform=linux/arm64 arm64v8/node:18-alpine as build
+ARG PLATFORM=linux/arm64
+
+FROM --platform=$PLATFORM arm64v8/node:16.13.1-alpine
 
 WORKDIR /app
 
@@ -12,7 +14,9 @@ RUN npm run build \
 
 ##############################################
 
-FROM --platform=linux/arm64 arm64v8/node:18-alpine
+ARG PLATFORM=linux/arm64
+
+FROM --platform=$PLATFORM arm64v8/node:16.13.1-alpine
 
 WORKDIR /app
 
