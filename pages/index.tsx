@@ -6,7 +6,7 @@ import { Skills } from "../components/Skills/Skills";
 import { SobreMim } from "../components/SobreMim/SobreMim";
 
 export default function Home() {
-  const skill = [ 
+  const skill:any = [ 
                       {categorie:'back', name:'git'}, {categorie:"back", name:'python'},{categorie:'back', name:'django'},{categorie:'back', name:'docker'}, 
                       {categorie:'front', name:'html'},{categorie:'front', name:'js'},{categorie:'front', name:'tailwind'},{categorie:'front', name:'react'}
                 ]

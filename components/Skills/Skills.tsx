@@ -1,7 +1,7 @@
 import { SkillCard } from "../Cards/SkillCard"
 
 interface SkillsProps {
-    skill: [{
+    skill:  [{
 
         id: string;
         name: string;
@@ -32,7 +32,7 @@ export const Skills = (props: SkillsProps) => {
                                     if (skill.categorie == 'back') {
                                         return (
                                             <>
-                                                <SkillCard id={id} name={skill.name} description={skill.description} />
+                                                <SkillCard id={id} name={skill.name}  description={skill.description} />
                                             </>)
                                     }
                                 })
@@ -57,7 +57,7 @@ export const Skills = (props: SkillsProps) => {
 
                                             return (
                                                 <>
-                                                    <SkillCard id={id} name={skill.name} />
+                                                    <SkillCard id={id} name={skill.name} description={skill.description} />
                                                 </>
                                             )
                                         }
